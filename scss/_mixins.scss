@@ -1,0 +1,29 @@
+@mixin button {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: $third;
+    @include transition;
+
+}
+
+@mixin button_hover {
+    background-color: #ffffff;
+    border: 1px solid $third;
+    color: $third;   
+}
+
+@mixin button_active {
+
+    opacity: 0.7;
+
+}
+
+@mixin transition {
+    
+    transition: .3s all;
+
+}

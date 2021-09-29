@@ -1,0 +1,617 @@
+.how-work {
+
+    margin-top: 230px;
+    width: 100%;
+
+    &__wrapper {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__header {
+
+        padding-top: 80px;
+        padding-bottom: 70px;
+        width: 710px;
+        text-align: center;
+        font-size: 66px;
+        line-height: 110%;
+        font-weight: 700;
+        margin: 0 auto;
+        // margin-bottom: 40px;
+
+        &--filter {
+
+            width: 330px;
+
+        }
+
+    }   
+    
+    &__canvas-wrap {
+
+        width: 900px;
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../icon/circles.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    &__canvas {
+
+        width: 868px;
+        height: 434px;
+        padding-left: 25px;
+        margin: 0 auto;
+
+    }
+
+
+    &__container {
+
+        position: relative;
+        margin: 0 auto;
+        width: 774px;
+        height: 774px;
+        background-image: url('../icon/circles.svg');
+
+        &::before {
+
+            content: '';
+            position: absolute;
+            top: 302px;
+            left: 125px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $third;
+
+        }
+
+        &--material {
+
+            margin-top: 78px;
+
+            &::before {
+
+                left: 630px;
+
+            }
+
+        }
+
+
+    }
+
+    &__img {
+
+        &--second {
+
+            margin-top: 105px;
+
+        }
+
+    }
+
+    &__text-wrap {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 356px;
+        height: 231px;
+        background: #f6f6f6;
+        border-radius: 42px;
+
+        &--steel {
+
+            top: calc(30% + 50px);
+            left: 0;
+
+        }
+
+        &--material {
+
+            top: 540px;
+            right: 0;                
+
+        }
+
+        &--filter {
+
+            top: calc(30% + 50px);
+            left: 0;    
+
+        }
+
+        &--mesh {
+
+            top: 540px;
+            right: 0;
+
+        }
+
+        &--fits {
+
+            top: 540px;
+            left: 0;
+
+        }
+
+    }
+
+    &__text-header {
+
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    &__text {
+
+        // width: 324px;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        padding: 0 35px;
+
+        &--steel {
+
+            padding: 0 29px;
+
+        }
+
+        &--material {
+
+            padding: 0 25px;
+
+        }
+
+        &--filter {
+
+            padding: 0 42px;
+
+        }
+
+    }
+
+
+}
+
+
+
+// @media (max-width:1470px) {
+
+//     .how-work {
+
+//         &__text-wrap {
+
+//             top: 70px;
+//             right: 622px;
+
+//             &--second {
+
+//                 top: 340px;
+//                 left: 600px;
+
+//             }
+
+//         }
+
+//     }
+
+// }
+
+@media (max-width: 1400px) {
+
+    .how-work {
+
+        margin-top: 150px;
+
+        &__header {
+
+            padding-top: 40px;
+            margin-bottom: 0;
+
+        }
+
+        &__text-wrap {
+
+            &--steel,
+            &--filter {
+
+                top: 20%;
+                left: -5%;
+
+            }
+
+            &--material,
+            &--mesh,
+            &--fits {
+
+                top: 65%;
+
+            }
+
+            &--fits {
+
+                left: -5%;
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 1366px) {
+
+    .how-work {
+
+        &__text-wrap {
+
+            &--steel,
+            &--filter {
+
+                top: calc(25% + 40px);
+
+            }
+
+            &--material,
+            &--mesh,
+            &--fits {
+
+                top: calc(65% + 50px);
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .how-work {
+
+        &__header {
+
+            padding-bottom: 40px;
+
+        }
+
+        &__text-wrap {
+
+            &--steel,
+            &--filter,
+            &--fits {
+
+                left: -20px;
+
+            }
+
+        }
+
+    }
+
+}
+@media (max-width:1024px) {
+
+    .how-work {
+
+
+        &__canvas {
+
+            width: 550px;
+            height: auto;
+
+        }        
+
+        &__header {
+
+            padding-top: 50px;
+
+        }
+
+        &__text-wrap {
+
+            padding: 20px;
+            width: 270px;
+            height: auto;
+
+            &--steel,
+            &--filter {
+
+                top: calc(25% + 40px);
+                left: 0;
+
+            }
+
+            &--material,
+            &--mesh,
+            &--fits {
+
+                top: calc(65% + 50px);
+
+            }
+
+            &--fits {
+
+                left: 0;
+
+            }
+
+        }
+
+        &__text-header {
+
+            margin-bottom: 10px;
+
+        }
+
+        &__text {
+
+            padding: 0;
+            font-size: 14px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 960px) {
+
+    .how-work {
+
+        &__header {
+
+            font-size: 48px;
+            padding-bottom: 40px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 854px) {
+
+    .how-work {
+
+        &__canvas {
+
+            width: 400px;
+
+        }
+
+        &__header {
+
+            padding-top: 30px;
+            padding-bottom: 60px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 775px) {
+
+    .how-work {
+
+        &__container {
+
+            width: 100%;
+            height: auto;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        &__header {
+
+            width: 100%;
+            
+            &--filter {
+
+                padding-bottom: 0;
+                width: 250px;
+                margin-bottom: 20px;
+
+            }
+
+        }
+
+        &__img {
+
+            width: 90%;
+            height: auto;
+
+        }
+
+        &__container {
+
+            &::before {
+
+                display: none;
+
+            }
+
+        }
+
+        
+
+    }
+
+}
+
+
+@media (max-width: 680px) {
+
+    .how-work {
+
+        margin-bottom: 200px;
+
+        &__canvas {
+
+            width: 100%;
+            height: auto;
+
+        }
+
+        &__header {
+
+            padding-top: 40px;
+            padding-bottom: 0;
+
+        }
+
+        &--filter {
+
+            margin-bottom: 0;
+
+        }
+
+        &__wrap--filter {
+
+            justify-content: center;
+
+        }
+
+        &__text-wrap {
+
+            position: static;
+            height: auto;
+            width: 100%;
+            padding: 0;
+            background-color: #fff;
+            align-items: center;
+            margin: 40px 0;
+
+            &--filter,
+            &--mesh,
+            &--fits {
+
+                position: static;
+                transform: translateX(0);
+                margin: 40px 0;
+
+            }
+
+            &--material,
+            &--mesh {
+
+                margin: 0;
+
+            }
+
+        }
+
+        &__text-header {
+
+            display: inline-block;
+            text-align: center;
+            width: 170px;
+            height: 43px;
+            margin: 0 auto;
+            background-color: #f6f6f6;
+            line-height: 43px;
+            vertical-align: center;
+            border-radius: 42px;
+            font-size: 15px;
+            margin-bottom: 32px;
+
+
+        }
+
+        &__text {
+
+            width: 215px;
+            font-size: 13px;
+            text-align: center;
+
+        }
+
+        &__container {
+
+            &--second {
+
+                margin-top: 282px;
+                margin-bottom: 282px;
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .how-work {
+
+        margin-top: 56px;
+
+        &__header {
+
+            padding-top: 70px;
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 59px;
+
+            &--filter {
+
+                margin-bottom: 20px;
+
+            }
+
+        }
+
+        &__container {
+
+            width: 280px;
+            height: 280px;
+            background-position: center;
+            background-size: contain;
+
+        }
+
+        &__img {
+
+            width: 246px;
+            height: 246px;
+            filter: drop-shadow(42px 22px 44px #D9E0EA);
+
+            &--second {
+
+                margin-top: 38px;
+                width: 250px;
+                height: 250px;
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clean Go</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/7.4.1/smooth-scrollbar.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body class="body">
+
+    <div class="wrapper">
+
+        <div class="container" id="my-scrollbar" data-scrollbar>
+
+            <header class="header" id="up">
+
+                <!-- <p class="header__name">Clean Co</p> -->
+                <a href="#" class="header_logo-link">
+                    <img src="img/logo.svg" alt="Logotype" class="header__logo-img">
+                </a>
+                <nav class="header__navigation navigation">
+
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#video" class="navigation__link">Video</a></li>
+                        <li class="navigation__item"><a href="#about-us" class="navigation__link">About</a></li>
+                        <li class="navigation__item"><a href="#order" class="navigation__link">Order</a></li>
+                        <li class="navigation__item"><a href="#contact-us" class="navigation__link">Contact us</a></li>
+                    </ul>
+
+                </nav>
+
+                <button class="header__hamburger header__hamburger--spin" type="button">
+                    <span class="header__hamburger-box">
+                        <span class="header__hamburger-inner"></span>
+                    </span>
+                </button>
+
+            </header>
+
+            <main class="main">
+
+                <section class="main-information">
+
+                    <div class="main-information__text-wrap">
+
+                        <h1 class="main-information__header">The Clean Straw</h1>
+                        <p class="main-information__text">
+                            The Clean Straw keeps your drink safe of unwanted<br> plastics + other particles.
+                        </p>
+                        <div class="main-information__link-wrap">
+                            <a href="#" class="main-information__order-link">Order Now</a>
+                            <a href="#video" class="main-information__video-link">
+                                Watch Video
+                                <span class="main-information__circle">
+                                    <svg width="6" height="8" viewBox="0 0 6 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 4L8.90085e-08 7.4641L6.39053e-09 0.535899L6 4Z" fill="#EC6765" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <img class="main-information__gif" src="img/gif.gif" alt="">
+
+                </section>
+
+                <section class="video-presentation" id="video">
+
+                    <p class="video-presentation__text" data-rellax-speed="2">Get acquainted with<br> the Clean Straw
+                    </p>
+                    <div class="video-presentation__wrap">
+                        <!-- <video src="CleanStraw_preview.mp4" controls></video> -->
+                        <!-- <iframe class="video-presentation__video" src="https://player.vimeo.com/video/445507641?title=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+                        <iframe class="video-presentation__video"
+                            src="https://player.vimeo.com/video/445507641?autoplay=1&title=0&portrait=0" frameborder="0"
+                            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://player.vimeo.com/video/445507641?autoplay=1&title=0&portrait=0><img src=img/video-preview.jpg alt='Animated product video for Clean Straw'><span>▶</span></a>"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <!-- <img class="video-presentation__video" src="img/video-preview.png" alt=""> -->
+
+                </section>
+
+                <section class="section section--problem">
+                    <div class="section__text-wrap wow animate__animated animate__fadeInLeft">
+                        <h2 class="section__header">Main Problem</h2>
+                        <p class="section__text">
+                            Plastic can be useful but unfortunately it causes tremendous damage to the environment. It’s essentially everywhere - water we drink + air we breathe. Although it hasn’t been proven to cause damage to humans, we conclude we’d be better off and healthier if plastic consumption was limited.
+                        </p>
+                    </div>
+                    <img class="section__picture section__picture--problem wow animate__animated animate__fadeInRight"
+                        src="img/image-1.jpg" alt="">
+                </section>
+
+                <section class="section section--solution">
+                    <img class="section__picture section__picture--solution wow animate__animated animate__fadeInLeft"
+                        src="img/image-2.jpg" alt="">
+                    <div class="section__text-wrap wow animate__animated animate__fadeInRight">
+                        <h2 class="section__header">Solution</h2>
+                        <p class="section__text">
+                            Of course, we need to reduce the amount of plastic in the environment. Until the environment and water we drink is plastic-free our solution is a reusable filter straw targeted towards keeping the user from ingesting unwanted <br>plastic + particles.
+
+                        </p>
+                    </div>
+                </section>
+
+                <section class="how-work" id="stick">
+
+                    <div class="how-work__wrapper" id="stick-pin">
+
+                        <h2 class="how-work__header">How the Straw<br> works?</h2>
+
+                        <canvas class="how-work__canvas" id="stick-canvas"></canvas>
+
+                        <div class="how-work__text-wrap how-work__text-wrap--steel wow animate__animated animate__fadeIn"
+                            id="steel">
+                            <h3 class="how-work__text-header how-work__text-header--steel">Stainless steel</h3>
+                            <p class="how-work__text how-work__text--steel">
+                                The tube is made of stainless steel. Stainless steel is durable and resists oxidation and corrosion. 
+                            </p>
+                        </div>
+
+                        <div class="how-work__text-wrap how-work__text-wrap--material wow animate__animated animate__fadeIn animate__delay-1s"
+                            id="material">
+                            <h3 class="how-work__text-header how-work__text-header--material">Two segments</h3>
+                            <p class="how-work__text how-work__text--material">
+                                Allow for straight or curved/bent tops for ease of drinking and filter placement or changing.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="how-work how-work--filter" id="filter">
+
+                    <div class="how-work__wrapper how-work__wrapper--filter" id="filter-pin">
+
+                        <h2 class="how-work__header how-work__header--filter">Filter</h2>
+
+                        <canvas class="how-work__canvas how-work__canvas--filter" id="filter-canvas"></canvas>
+
+                        <div class="how-work__text-wrap how-work__text-wrap--filter wow animate__animated animate__fadeIn"
+                            id="filter">
+                            <h3 class="how-work__text-header how-work__text-header--filter">The filter</h3>
+                            <p class="how-work__text how-work__text--filter">
+                                The filter keeps out the smallest particles. The filter should be changed every 200 uses so that you can always enjoy clean drinks.
+                            </p>
+                        </div>
+
+                        <div class="how-work__text-wrap how-work__text-wrap--mesh wow animate__animated animate__fadeIn animate__delay-1s"
+                            id="mesh">
+                            <h3 class="how-work__text-header how-work__text-header--mesh">Very small mesh</h3>
+                            <p class="how-work__text how-work__text--mesh">
+                                It is a very small mesh made of innovative metal. It is so small that it filters micro plastic + particles that can't been seen. 
+                            </p>
+                        </div>
+
+                        <div class="how-work__text-wrap how-work__text-wrap--fits wow animate__animated animate__fadeIn animate__delay-1s"
+                            id="mesh">
+                            <h3 class="how-work__text-header how-work__text-header--fits">Where it goes</h3>
+                            <p class="how-work__text how-work__text--fits">
+                                The filter fits between the upper and lower Straw segments.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                </section>
+
+                <section class="about-us" id="about-us">
+
+                    <h2 class="about-us__header">About Clean Inc</h2>
+
+                    <ul class="about-us__list">
+                        <li class="about-us__item wow animate__animated animate__fadeIn">
+                            <span class="about-us__number">1</span>
+                            <p class="about-us__text about-us__text--first">
+                                Clean Inc, the company behind the clean straw, is in development of products that aim to keep  plastic and other pollution from entering the body and environment.
+                            </p>
+                        </li>
+                        <li class="about-us__item wow animate__animated animate__fadeIn animate__delay-0-5s">
+                            <span class="about-us__number">2</span>
+                            <p class="about-us__text about-us__text--second">
+                                All our products are manufactured in either the US , UK or European Union. We’re proud to say that 5% of all profit is donated to environmental charities.
+                            </p>
+                        </li>
+                        <li class="about-us__item wow animate__animated animate__fadeIn animate__delay-1s">
+                            <span class="about-us__number">3</span>
+                            <p class="about-us__text">
+                                Though there is a need for Clean Inc products today, we hope at some point in the coming decades there won’t be a need to filter pollution from something as essential as water.
+                            </p>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="order" id="order">
+
+                    <p class="order__text">
+                        <span class="order__span">Make</span> an order and <span class="order__span">support</span> our
+                        kickstarter project
+                    </p>
+                    <a href="#" class="order__link">Order Now</a>
+
+                </section>
+
+            </main>
+
+            <footer class="footer" id="contact-us">
+                <p class="footer__text">Additional support?</p>
+                <div class="footer__wrap">
+                    <a class="footer__link footer__link--donate" href="mailto:Investor@cleaninc.co">Investor Enquiries</a>
+                    <a class="footer__link footer__link--donate footer__link--enquires" href="mailto:support@cleaninc.co">All Enquiries</a>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link footer__link--social">
+                                <span class="footer__span">Instagram</span>
+                                <img class="footer__icon" src="icon/Instagram.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link footer__link--social">
+                                <span class="footer__span">Facebook</span>
+                                <img class="footer__icon" src="icon/Facebook.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link footer__link--social">
+                                <span class="footer__span">Youtube</span>
+                                <img class="footer__icon" src="icon/Youtube.svg" alt="Youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+
+
+        <img class="rellax parallax-img parallax-img--1" data-rellax-speed="-3" src="img/svg/parallax/1.svg" alt="">
+
+        <img class="rellax parallax-img parallax-img--2" data-rellax-speed="-1" src="img/svg/parallax/2.svg" alt="">
+        <img class="rellax parallax-img parallax-img--3" data-rellax-speed="-2" src="img/svg/parallax/3.svg" alt="">
+        <img class="rellax parallax-img parallax-img--4" data-rellax-speed="3" src="img/svg/parallax/4.svg" alt="">
+        <img class="rellax parallax-img parallax-img--5" data-rellax-speed="-1" src="img/svg/parallax/5.svg" alt="">
+        <img class="rellax parallax-img parallax-img--6" data-rellax-speed="2" src="img/svg/parallax/6.svg" alt="">
+        <img class="rellax parallax-img parallax-img--7" data-rellax-speed="3" src="img/svg/parallax/7.svg" alt="">
+        <img class="rellax parallax-img parallax-img--8" data-rellax-speed="2" src="img/svg/parallax/8.svg" alt="">
+        <img class="rellax parallax-img parallax-img--9" data-rellax-speed="3" src="img/svg/parallax/9.svg" alt="">
+        <img class="rellax parallax-img parallax-img--10" data-rellax-speed="2" src="img/svg/parallax/10.svg" alt="">
+        <img class="rellax parallax-img parallax-img--11" data-rellax-speed="3" src="img/svg/parallax/11.svg" alt="">
+        <img class="rellax parallax-img parallax-img--12" data-rellax-speed="2" src="img/svg/parallax/12.svg" alt="">
+        <img class="rellax parallax-img parallax-img--13" data-rellax-speed="3" src="img/svg/parallax/13.svg" alt="">
+        <img class="rellax parallax-img parallax-img--14" data-rellax-speed="2" src="img/svg/parallax/14.svg" alt="">
+        <img class="rellax parallax-img parallax-img--15" data-rellax-speed="3" src="img/svg/parallax/15.svg" alt="">
+        <img class="rellax parallax-img parallax-img--16" data-rellax-speed="2" src="img/svg/parallax/16.svg" alt="">
+        <img class="rellax parallax-img parallax-img--17" data-rellax-speed="3" src="img/svg/parallax/17.svg" alt="">
+        <img class="rellax parallax-img parallax-img--18" data-rellax-speed="2" src="img/svg/parallax/18.svg" alt="">
+        <img class="rellax parallax-img parallax-img--19" data-rellax-speed="3" src="img/svg/parallax/19.svg" alt="">
+        <img class="rellax parallax-img parallax-img--20" data-rellax-speed="3" src="img/svg/parallax/20.svg" alt="">
+        <img class="rellax parallax-img parallax-img--21" data-rellax-speed="2" src="img/svg/parallax/21.svg" alt="">
+
+        <a href="#up" class="pageup"></a>
+
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- <script src="js/tweenmax.min.js"></script> -->
+    <!-- <script src="js/animation.gsap.min.js"></script> -->
+    <script src="js/scrollmagic.min.js"></script>
+    <!-- <script src="js/debug.addIndicators.min.js"></script> -->
+    <!-- <script src="js/velocity.min.js"></script> -->
+    <!-- <script src="js/smooth-scrollbar.js"></script> -->
+    <script src="js/app.js"></script>
+    <script>
+        new WOW().init();
+
+        var rellax = new Rellax('.rellax');
+
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1600) {
+                    $('.pageup').fadeIn();
+                } else {
+                    $('.pageup').fadeOut();
+                }
+            });
+
+            if ($(window).width() < 481) {
+
+                $('.how-work__text-wrap').removeClass(
+                'wow animate__animated animate__fadeIn animate__delay-1s');
+                $('.section__text-wrap').removeClass('wow animate__animated');
+                $('.about-us__item').removeClass('wow animate__animated');
+                $('.section__picture').removeClass('wow animate__animated');
+
+            }
+
+            $("a[href^='#']").on("click", function (e) {
+                e.preventDefault();
+                var anchor = $(this).attr('href');
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor).offset().top - 60
+                }, 1200);
+            });
+
+            $(".header__hamburger").click(function () {
+                $(this).toggleClass("is-active");
+                $('.navigation').toggleClass('navigation--active');
+                $('.body').toggleClass('body--active');
+                $('.container-header').toggleClass('container-header--active');
+            });
+
+            $('.navigation__link').click(function () {
+                $('.header__hamburger').toggleClass("is-active");
+                $('.navigation').toggleClass('navigation--active');
+                $('.body').removeClass('body--active');
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

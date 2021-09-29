@@ -1,0 +1,605 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+
+}
+
+p,
+h1,
+h2,
+h3 {
+
+    margin: 0;
+
+}
+
+ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+body {
+
+    font-family: 'SoinSansNeue', Arial, sans-serif;
+    font-size: 24px;
+    color: $main;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.container {
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.wrapper {
+
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 80px;
+    padding-bottom: 80px;
+    background-image: url('../5-layers_1.jpg');
+    background-image: url('../img/svg/bg-cloud-1.svg'), 
+                      url('../img/svg/bg-yellow.svg'),
+                      url('../img/svg/bg-cloud-2.svg'),
+                      url('../img/svg/bg-blue.svg'),
+                      url('../img/svg/bg-cloud-3.svg'),
+                      url('../img/svg/bg-triangle.svg');
+    background-position: right top,
+                         left 1250px,
+                         left 1705px,
+                         right 3090px,
+                         right 100%,
+                         right 1230px;
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.parallax-img {
+
+  position: absolute;
+  z-index: -1;
+
+  &--1 {
+
+    top: 237px;
+    right: 20.3%;
+
+  }
+
+  &--2 {
+
+    top: 569px;
+    right: 5.8%;  
+
+  }
+
+  &--3 {
+
+    top: 310px;
+    left: 10.8%;  
+
+  }
+
+  &--4 {
+
+    top: 982px;
+    left: 9%;
+
+  }
+
+  &--5 {
+
+    top: 655px;
+    left: 4.2%;    
+
+  }
+
+  &--6 {
+
+    top: 854px;
+    left: 30.2%;    
+
+  }
+
+  &--7 {
+
+    top: 1189px;
+    right: 18.12%;        
+
+  }
+
+  &--8 {
+
+    top: 907px;
+    right: 5.7%;
+
+  }
+
+  &--9 {
+
+    top: 2804px;
+    right: 4.4%;    
+
+  }
+
+  &--10 {
+
+    top: 3087px;
+    right: 14.9%;    
+
+  }
+
+  &--11 {
+
+    top: 1961px;
+    left: 10.3%;    
+
+  }
+
+  &--12 {
+
+    top: 3264px;
+    right: 11%;    
+
+  }
+
+  &--13 {
+
+    top: 2645px;
+    right: 12.5%;  
+
+  }
+
+  &--14 {
+
+    top: 2169px;
+    left: 3.4%;    
+
+  }
+
+  &--15 {
+
+    top: 3190px;
+    right: 26.5%;    
+
+  }
+
+  &--16 {
+
+    top: 2551px;
+    left: 23.3%;  
+    
+
+  }
+
+  &--17 {
+
+    top: 2753px;
+    left: 0;    
+
+  }
+
+  &--18 {
+
+    top: 3020px;
+    left: 7.2%;    
+
+  }
+
+  &--19 {
+
+    top: 3232px;
+    left: 3.4%;    
+
+  }
+
+  &--20 {
+
+    top: 3035px;
+    right: 3.9%;    
+
+  }
+
+  &--21 {
+
+    top: 2521px;
+    left: 27.5%;    
+
+  }
+
+}
+
+.pageup {
+
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    background-image: url('../icon/arrow.svg');
+    background-color: $third;
+    // background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include transition;
+
+  &:hover {
+
+    border: 1px solid $third;
+    background-image: url('../icon/arrow-2.svg');
+    background-color: #ffffff;
+
+  }
+
+}
+
+
+
+.visually-hidden {
+
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+  overflow: hidden;
+    
+}
+
+.body {
+
+  &--active {
+
+    overflow: hidden;
+
+  }
+
+}
+
+.animate__delay-0-5s{
+
+  animation-delay: .5s;
+
+}
+
+.animate__delay-1-5s{
+
+  animation-delay: 1.5s;
+
+}
+
+@import 'blocks/header';
+@import 'blocks/navigation';
+@import 'blocks/main-information';
+@import 'blocks/video-presentation';
+@import 'blocks/section';
+@import 'blocks/_about-us';
+@import 'blocks/order';
+@import 'blocks/footer';
+@import 'blocks/how-work';
+
+
+@media (max-width: 1790px) {
+
+  .wrapper {
+
+    background-position: right top,
+                         left 1250px,
+                         left 1705px,
+                         right 3090px,
+                         right 101%,
+                         right 1230px;      
+
+  }
+
+}
+
+@media (max-width: 1650px) {
+
+  .wrapper {
+
+    background-position: right top,
+                         left 1250px,
+                         left 1705px,
+                         right 3090px,
+                         right 102%,
+                         right 1230px;      
+
+  }
+
+}
+
+@media (max-width: 1460px) {
+
+  .wrapper {
+
+    background-position: right top,
+                         left 1250px,
+                         left 1705px,
+                         right 3090px,
+                         right 103%,
+                         right 1230px;      
+
+  }
+
+}
+
+@media (max-width: 1400px) {
+
+  .container {
+
+    width: 1200px;
+    padding: 0 40px;
+
+  }
+
+  // .wrapper {
+
+  //   background-position: right top,
+  //                        left 1250px,
+  //                        left 1705px,
+  //                        right 3090px,
+  //                        right 110%,
+  //                        right 1230px;    
+
+  // }
+
+}
+
+@media (max-width: 1280px) {
+
+  .wrapper {
+
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .container {
+
+    width: 100%;
+    padding: 0 60px;
+
+  }
+
+}
+
+@media (max-width: 1185px) {
+
+  .wrapper {
+
+    background-position: right top,
+                         left 1250px,
+                         left 1705px,
+                         right 3090px,
+                         right 104%,
+                         right 1230px;      
+
+  }
+
+}
+
+@media (max-width: 990px) {
+
+  .container {
+
+    padding: 0 40px;
+
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .wrapper {
+
+      padding-bottom: 50px;
+
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .wrapper {
+
+    padding-bottom: 30px;
+    background-size: 150%,
+                     0,
+                     150%,
+                     0,
+                     120%,
+                     20%;
+    background-position: -90px 90px,
+                         0 0,
+                         -70px 1010px,
+                         0 0,
+                         -70px 99.5%,
+                         right 1000px;
+
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .container {
+
+    padding: 0 20px;
+    overflow-x: hidden;
+
+  }
+
+  .parallax-img {
+
+    &--1 {
+  
+      display: none;
+  
+    }
+  
+    &--2 {
+  
+      top: 490px;
+      right: 83px;  
+  
+    }
+  
+    &--3 {
+  
+      display: none; 
+  
+    }
+  
+    &--4 {
+  
+      display: none;
+  
+    }
+  
+    &--5 {
+  
+      display: none;   
+  
+    }
+  
+    &--6 {
+  
+      top: 115px;
+      left: 44px;    
+  
+    }
+  
+    &--7 {
+  
+      display: none;     
+  
+    }
+  
+    &--8 {
+  
+      top: 360px;
+      right: 32px;
+  
+    }
+  
+    &--9 {
+  
+      display: none;  
+  
+    }
+  
+    &--10 {
+  
+      display: none;    
+  
+    }
+  
+    &--11 {
+  
+      display: none;  
+  
+    }
+  
+    &--12 {
+  
+      display: none;   
+  
+    }
+  
+    &--13 {
+  
+      display: none;
+  
+    }
+  
+    &--14 {
+  
+      display: none;   
+  
+    }
+  
+    &--15 {
+  
+      display: none;  
+  
+    }
+  
+    &--16 {
+  
+      font: none;
+      
+  
+    }
+  
+    &--17 {
+  
+      top: 1115px;
+      left: 0;   
+      width: 48px; 
+  
+    }
+  
+    &--18 {
+  
+      display: none;   
+  
+    }
+  
+    &--19 {
+  
+      top: 1500px;
+      left: 3.4%;    
+  
+    }
+  
+    &--20 {
+  
+      top: 2000px;
+      right: 3.9%;    
+  
+    }
+  
+    &--21 {
+  
+      top: 2400px;
+      left: 3.5%;    
+  
+    }
+  
+  }
+
+  .pageup {
+
+      bottom: 10px;
+      right: 10px;
+      height: 40px;
+      width: 40px;
+
+
+  }
+
+}

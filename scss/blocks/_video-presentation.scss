@@ -1,0 +1,169 @@
+.video-presentation {
+
+    margin-top: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+
+        width: 795px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        text-align: center;
+        font-size: 45px;
+        line-height: 58.5px;
+        font-weight: 800;
+
+    }
+
+    &__wrap {
+       
+        border-radius: 30px;
+        width: 1000px;
+        height: 568px;
+        overflow: hidden;
+
+        video {
+
+            width: 100%;
+            border-radius: 30px;
+
+        }
+
+    }
+
+    &__video {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+
+@media (max-width: 1150px) {
+
+    .video-presentation {
+
+        &__wrap {
+
+            width: 800px;
+            height: 450px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 1060px) {
+
+    .video-presentation {
+
+        margin-top: 87px;
+
+    }
+
+}
+
+@media (max-width: 890px) {
+
+    .video-presentation {
+
+        &__wrap {
+
+            width: 600px;
+            height: 338px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 840px) {
+
+    .video-presentation {
+
+        &__text {
+
+            font-size: 36px;
+            line-height: 48px;
+            width: 100%;
+            margin-bottom: 40px;
+
+        }
+
+    }
+
+}
+
+
+
+
+@media (max-width: 640px) {
+
+    .video-presentation {
+
+        &__text {
+
+            font-size: 30px;
+            line-height: 40px;
+            width: 100%;
+            margin-bottom: 30px;
+
+        }
+
+        &__wrap {
+
+            width: 470px;
+            height: 264px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .video-presentation {
+
+        &__text {
+
+            font-size: 26px;
+            line-height: 30px;
+            width: 100%;
+            margin-bottom: 30px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .video-presentation {
+
+        margin-top: 80px;
+
+        &__text {
+
+            width: 318px;
+            font-size: 20px;
+            line-height: 26px;
+
+        }
+
+        &__wrap {
+
+            width: 300px;
+            height: 169px;
+
+        }
+
+    }
+
+}

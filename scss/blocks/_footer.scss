@@ -1,0 +1,194 @@
+.footer {
+
+    height: 135px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__text {
+
+        font-size: 43px;
+        line-height: 120%;
+        font-weight: 500;
+
+    }
+
+    &__wrap {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__list {
+
+        width: 460px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__link {
+
+        &--social {
+
+            font-size: 20px;
+            line-height: 120%;
+            color: $fourth;
+            font-weight: 700;
+            text-decoration: none;
+            @include transition;
+
+            &:hover {
+
+                color: $second;
+    
+            }
+
+            &:active {
+
+                opacity: 0.7;
+
+            }
+
+        }
+
+        &--donate {
+
+            @include button;
+            padding-top: 5px;
+            width: 173px;
+            height: 45px;
+            border-radius: 27px;
+            font-size: 15px;
+            line-height: 160%;
+            font-weight: 700;
+
+            &:hover {
+
+                @include button_hover;
+
+            }
+
+            &:active {
+
+                @include button_active;
+
+            }
+
+        }
+
+        &--enquires {
+
+            background: $second;
+            margin-left: 30px;
+            margin-right: auto;
+
+        }
+
+    }
+
+    &__icon {
+
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 690px) {
+
+    .footer {
+
+        margin-top: 100px;
+
+        &__list {
+
+            width: 300px;
+
+        }
+
+        &__text {
+
+            font-size: 38px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    .footer {
+
+        &__span {
+
+            display: none;
+
+        }
+
+        &__icon {
+
+            display: block;
+
+        }
+
+        &__list {
+
+            width: 260px;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .footer {
+
+        margin-top: 55px;
+        margin-bottom: 20px;
+        height: auto;
+
+        &__text {
+
+            font-size: 25px;
+            margin-bottom: 35px;
+            text-align: center;
+
+        }
+
+        &__wrap {
+
+            flex-direction: column;
+
+        }
+
+        &__link {
+
+            &--donate {
+
+                margin-bottom: 20px;
+                width: 121px;
+                font-size: 13px;
+                font-weight: 700;
+
+            }
+
+            &--enquires {
+
+                margin: 0;
+                margin-bottom: 45px;
+    
+            }
+
+        }
+
+    }
+
+}

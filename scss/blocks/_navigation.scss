@@ -1,0 +1,94 @@
+.navigation {
+
+    &__list {
+
+        width: 435px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__link {
+
+        font-family: 'TTNormsPro';
+        font-size: 16px;
+        line-height: 153%;
+        text-decoration: none;
+        color: $second;
+        transition: .3s all;
+
+        &:hover {
+
+            color: $main;
+
+        }
+
+    }
+
+    
+
+}
+
+@media (max-width: 720px) {
+
+    .navigation {
+
+        width: 60%;
+
+        &__list {
+
+            width: 100%;
+
+        }
+
+    }
+  
+}
+
+@media (max-width: 480px) {
+
+    .navigation {
+
+        position: fixed;
+        opacity: 0;
+        transition: .3s all;
+        width: 100%;
+        background: #ffffff;
+        top: 110px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        z-index: -1;
+        
+
+        &--active {
+
+            
+            opacity: 1;
+            z-index: 9999;
+    
+        }
+
+        &__list {
+
+            flex-direction: column;
+            height: 172px;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        &__item {
+
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+    }
+
+}
