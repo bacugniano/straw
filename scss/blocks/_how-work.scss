@@ -615,3 +615,17 @@
     }
 
 }
+
+@media (max-width: 375px) {
+
+    .how-work {
+
+        &__canvas {
+
+            padding-left: 0;
+
+        }
+
+    }
+
+}
